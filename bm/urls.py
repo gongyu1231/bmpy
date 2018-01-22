@@ -20,10 +20,10 @@ from django.urls import include,path
 from main import views as main
 #from polls import views as polls
 #from django.urls import include
-app_name='polls',
+#app_name='polls',
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',main.index),
-#    path('polls/', include('polls.urls'),
-#path('polls/', include('polls.urls',namespace
+    path('main/',main.index),
+    path('toupiao', include('toupiao.urls')),
+]
